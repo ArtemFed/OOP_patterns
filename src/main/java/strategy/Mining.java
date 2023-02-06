@@ -2,9 +2,9 @@ package strategy;
 
 import state.Activity;
 
-public class Sleeping implements Activity {
+public class Mining implements Activity {
     @Override
     public void justDoIt() {
-        System.out.println("Just sleeping...");
+        System.out.println("Just mining...");
     }
 }

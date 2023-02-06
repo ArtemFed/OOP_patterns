@@ -1,6 +1,6 @@
 package state;
 
-public class Developer {
+public class Dwarf {
     Activity activity;
 
     public void setActivity(Activity activity) {
@@ -8,12 +8,12 @@ public class Developer {
     }
     public void changeActivity() {
         if (activity instanceof Sleeping) {
-            setActivity(new Training());
-        } else if (activity instanceof Training) {
-            setActivity(new Coding());
-        } else if (activity instanceof Coding) {
-            setActivity(new Reading());
-        } else if (activity instanceof Reading) {
+            setActivity(new Mining());
+        } else if (activity instanceof Mining) {
+            setActivity(new ElfFighting());
+        } else if (activity instanceof ElfFighting) {
+            setActivity(new BeerDrinking());
+        } else if (activity instanceof BeerDrinking) {
             setActivity(new Sleeping());
         }
     }

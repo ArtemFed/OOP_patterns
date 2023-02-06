@@ -1,7 +1,9 @@
 package strategy;
 
-public class Developer {
-    Activity activity;
+import state.Activity;
+
+public class Dwarf {
+    state.Activity activity;
 
     public void setActivity(Activity activity) {
         this.activity = activity;
